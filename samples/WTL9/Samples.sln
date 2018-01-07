@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Draw", "Custom Draw", "{64E21A3D-A5D7-4E33-967E-C40987136F6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{E9CEDE77-6DAC-4E65-AB9A-6B9681B7CC8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Owner Draw", "Owner Draw", "{8C364E43-A19D-4804-8F7E-7E0EA7F85D39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MenuButton", "Custom Draw\Menu Button\MenuButton.vcxproj", "{BCCAADAD-B8DB-44E1-907C-5AB24E7D75E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlatButton", "Owner Draw\Flat Button\FlatButton.vcxproj", "{239D39DC-492F-4BE4-A602-E1FB8DD1C20C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CollapsibleFrame", "General\Collapsible Frame\CollapsibleFrame.vcxproj", "{0DA453BB-E458-4C8B-8414-2D84FEE6B993}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Events", "General\Events\Events.vcxproj", "{D0D9FFDD-792B-43C7-AF58-53D639808838}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VistaFeatures", "General\Vista Features\VistaFeatures.vcxproj", "{2C7A92E5-1441-4C26-B457-A86A43EA62D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCCAADAD-B8DB-44E1-907C-5AB24E7D75E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCCAADAD-B8DB-44E1-907C-5AB24E7D75E1}.Debug|Win32.Build.0 = Debug|Win32
+		{BCCAADAD-B8DB-44E1-907C-5AB24E7D75E1}.Release|Win32.ActiveCfg = Release|Win32
+		{BCCAADAD-B8DB-44E1-907C-5AB24E7D75E1}.Release|Win32.Build.0 = Release|Win32
+		{239D39DC-492F-4BE4-A602-E1FB8DD1C20C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{239D39DC-492F-4BE4-A602-E1FB8DD1C20C}.Debug|Win32.Build.0 = Debug|Win32
+		{239D39DC-492F-4BE4-A602-E1FB8DD1C20C}.Release|Win32.ActiveCfg = Release|Win32
+		{239D39DC-492F-4BE4-A602-E1FB8DD1C20C}.Release|Win32.Build.0 = Release|Win32
+		{0DA453BB-E458-4C8B-8414-2D84FEE6B993}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0DA453BB-E458-4C8B-8414-2D84FEE6B993}.Debug|Win32.Build.0 = Debug|Win32
+		{0DA453BB-E458-4C8B-8414-2D84FEE6B993}.Release|Win32.ActiveCfg = Release|Win32
+		{0DA453BB-E458-4C8B-8414-2D84FEE6B993}.Release|Win32.Build.0 = Release|Win32
+		{D0D9FFDD-792B-43C7-AF58-53D639808838}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0D9FFDD-792B-43C7-AF58-53D639808838}.Debug|Win32.Build.0 = Debug|Win32
+		{D0D9FFDD-792B-43C7-AF58-53D639808838}.Release|Win32.ActiveCfg = Release|Win32
+		{D0D9FFDD-792B-43C7-AF58-53D639808838}.Release|Win32.Build.0 = Release|Win32
+		{2C7A92E5-1441-4C26-B457-A86A43EA62D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C7A92E5-1441-4C26-B457-A86A43EA62D7}.Debug|Win32.Build.0 = Debug|Win32
+		{2C7A92E5-1441-4C26-B457-A86A43EA62D7}.Release|Win32.ActiveCfg = Release|Win32
+		{2C7A92E5-1441-4C26-B457-A86A43EA62D7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BCCAADAD-B8DB-44E1-907C-5AB24E7D75E1} = {64E21A3D-A5D7-4E33-967E-C40987136F6E}
+		{0DA453BB-E458-4C8B-8414-2D84FEE6B993} = {E9CEDE77-6DAC-4E65-AB9A-6B9681B7CC8B}
+		{D0D9FFDD-792B-43C7-AF58-53D639808838} = {E9CEDE77-6DAC-4E65-AB9A-6B9681B7CC8B}
+		{2C7A92E5-1441-4C26-B457-A86A43EA62D7} = {E9CEDE77-6DAC-4E65-AB9A-6B9681B7CC8B}
+		{239D39DC-492F-4BE4-A602-E1FB8DD1C20C} = {8C364E43-A19D-4804-8F7E-7E0EA7F85D39}
+	EndGlobalSection
+EndGlobal

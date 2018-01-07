@@ -1,0 +1,25 @@
+HKCR
+{
+	BtnCtlsA.CommonProperties.1 = s 'TimoSoft CommonProperties Class 1.10 (ANSI)'
+	{
+		CLSID = s '{7DF51394-87B5-4fe1-BF73-2E5DB96F2BCE}'
+	}
+	BtnCtlsA.CommonProperties = s 'TimoSoft CommonProperties Class (ANSI)'
+	{
+		CLSID = s '{7DF51394-87B5-4fe1-BF73-2E5DB96F2BCE}'
+		CurVer = s 'BtnCtlsA.CommonProperties.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {7DF51394-87B5-4fe1-BF73-2E5DB96F2BCE} = s 'TimoSoft CommonProperties Class (ANSI)'
+		{
+			ProgID = s 'BtnCtlsA.CommonProperties.1'
+			VersionIndependentProgID = s 'BtnCtlsA.CommonProperties'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A38BC98C-3D41-44db-B27B-CF19BAD8AE53}'
+		}
+	}
+}

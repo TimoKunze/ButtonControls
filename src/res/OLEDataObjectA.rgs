@@ -1,0 +1,25 @@
+HKCR
+{
+	BtnCtlsA.OLEDataObject.1 = s 'TimoSoft OLEDataObject Class 1.10 (ANSI)'
+	{
+		CLSID = s '{E3BE1D9C-1F71-4595-A4B2-26AF03461551}'
+	}
+	BtnCtlsA.OLEDataObject = s 'TimoSoft OLEDataObject Class (ANSI)'
+	{
+		CLSID = s '{E3BE1D9C-1F71-4595-A4B2-26AF03461551}'
+		CurVer = s 'BtnCtlsA.OLEDataObject.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E3BE1D9C-1F71-4595-A4B2-26AF03461551} = s 'TimoSoft OLEDataObject Class (ANSI)'
+		{
+			ProgID = s 'BtnCtlsA.OLEDataObject.1'
+			VersionIndependentProgID = s 'BtnCtlsA.OLEDataObject'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A38BC98C-3D41-44db-B27B-CF19BAD8AE53}'
+		}
+	}
+}

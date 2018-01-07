@@ -1,0 +1,242 @@
+Version 1.10.3 - 07/01/2018
+
+- Project published on GitHub.
+
+
+
+Version 1.10.2 - 30/07/2016
+
+- Fixed some memory leaks that occurred when firing certain events.
+
+
+
+Version 1.10.1 - 28/01/2016
+
+- FIX: The controls could crash during OLE drag'n'drop.
+- FIX: The controls could crash the other process during OLE drag'n'drop, especially when IOLEDataObject::SetDropDescription() had been called.
+
+
+
+Version 1.10.0 - 19/01/2016
+
+- Added the FinishOLEDragDrop method to each control. It should not be used if not really needed. It can be used to hide the drag image if execution of the OLEDragDrop event takes a long time or if a message is displayed from within this event.
+- Initial support for Windows 10.
+
+
+
+Version 1.9.0 - 29/05/2014
+
+- Added the XClick, and XDblClick events for support of the extended mouse buttons.
+- Extended the Mouse* events to support the extended mouse buttons.
+- FIX: The Font and MouseIcon properties could leak GDI resources.
+- Initial support for Windows 8.1.
+
+
+
+Version 1.8.9 - 17/10/2013
+
+- Reactivated data-binding capabilities. When the library is registered, it will call regtlib.exe msdatsrc.tlb before registering itself. This seems to fix the mess caused by the broken Windows Update from the beginning of this year.
+
+
+
+Version 1.8.8 - 06/10/2013
+
+- Slightly reduced GDI resource usage.
+
+
+
+Version 1.8.7 - 29/03/2013
+
+- Disabled data-binding capabilities as they cause "Object library not registered" errors when adding the control library to the project. This problem might be related to a recent Windows Update.
+
+
+
+Version 1.8.6 - 09/03/2013
+
+- FIX: The Frame control has not been drawn correctly if the RightToLeft property included the rtlLayout flag.
+
+
+
+Version 1.8.5 - 13/01/2013
+
+- FIX: The GetIdealSize method ignored the Appearance and BorderStyle properties.
+- FIX: Drawing issues could occur if a windowless control was placed inside the Frame control.
+
+
+
+Version 1.8.4 - 14/10/2012
+
+- FIX: The Frame control wasn't redrawn properly if its text has been shortened.
+- FIX: The last character of the control text could not be used as accelerator key.
+- FIX: The ResizedControlWindow event was not fired when it should have been fired.
+
+
+
+Version 1.8.3 - 08/09/2012
+
+- Fixed an error in the Frame control's image list handling code that could lead to crashes.
+- FIX: Windowless controls placed inside the Frame control did not raise Mouse events anymore.
+- Initial support for Windows 8.
+
+
+
+Version 1.8.2 - 15/04/2012
+
+- FIX: The Frame control could receive the keyboard focus by double-clicking on it.
+- FIX: The Frame control could make child controls lose the keyboard focus when they shouldn't. This problem occured in MDI applications only.
+
+
+
+Version 1.8.1 - 11/03/2012
+
+- Further performance improvements.
+
+
+
+Version 1.8.0 - 10/03/2012
+
+- Rewrote the drawing code again, because the previous version did not perform well.
+- Reimplemented the subclassing code of the VB6 samples to make it more robust.
+
+
+
+Version 1.7.0 - 08/01/2012
+
+- Rewrote the drawing code of all controls for the case that the client application uses version 6.x of comctl32.dll. This should fix drawing issues, especially with the Frame control.
+
+
+
+Version 1.6.1 - 20/05/2011
+
+- Fixed a bug in the Frame control that could make other, invisible windows visible again under rather complex circumstances.
+- FIX: Disabling the controls did not move the keyboard focus to the next control in the tab order.
+- FIX: The ResizedControlWindow event was fired when actually nothing had changed.
+
+
+
+Version 1.6.0 - 07/01/2011
+
+- FIX: Due do a bug in Microsoft ATL, the controls could lose keyboard focus when they shouldn't. This problem occured in MDI applications only. Many thanks to Peter Schellenbach for his help.
+- Switched to Visual C++ 2010 and dropped support for Windows 2000.
+
+
+
+Version 1.5.1 - 07/11/2010
+
+- FIX: IOLEDataObject::SetDropDescription could cause crashes in other programs.
+- Added a new VB6 sample: Color Chooser.
+
+
+
+Version 1.5.0 - 02/05/2010
+
+- Added the IconIndex and UseImprovedImageListSupport properties to each control. These properties make it possible to use a single image list for all button controls on a form or in an app.
+- Added a new property page that can be used to enter Unicode texts at design time.
+
+
+
+Version 1.4.3 - 01/01/2010
+
+- Improved performance.
+- FIX: If the controls were placed on a Form for which the KeyPreview feature was activated, the Form_Key* handler didn't receive key strokes like Delete, if the controls had the keyboard focus.
+- FIX: The 'shift' parameter that many events have, often missed the ALT key.
+- Deploy (stripped) symbols with the binaries to make debugging easier. This are the pdb files in case you wonder.
+
+
+
+Version 1.4.2 - 03/10/2009
+
+- Changed the implementation of the ICheckBox::SelectionState property, so that setting it to -1 is equal to setting it to ssChecked. This is useful for data-binding.
+- Improved support for Aero drag images.
+
+
+
+Version 1.4.1 - 25/07/2009
+
+- Massively reduced the usage of GDI handles.
+- Made some internal changes that will make it easier for me to keep binary compatibility in future.
+
+
+
+Version 1.4.0 - 10/04/2009
+
+- Initial support for Windows 7.
+- Extended the DropDescriptionIconConstants enumeration by 'ddiUseDefault'.
+- FIX: Drop descriptions didn't work as expected if the drag source was a 64 bit app.
+- FIX: Changing the RightToLeft properties at runtime did not always have the expected effect.
+- Improved performance of Frame control.
+
+
+
+Version 1.3.1 - 29/10/2008
+
+- FIX: Ignore calls to IOLEDataObject::SetDropDescription() if the drag image is in classic style.
+- Slightly changed handling of the situation where the user presses a mouse button, drags the mouse out of the control's client area and releases the button.
+- Fixed some GDI handle leaks.
+- Fixed some drawing glitches.
+- Removed most of the data-binding stuff (it was probably broken anyway) and fixed the remaining parts.
+- Switched to Visual C++ 2008 and dropped support for Windows 9x, Me and NT 4.0.
+- Improved the documentation.
+
+
+
+Version 1.3.0 - 05/12/2007
+
+- Added the IOLEDataObject::GetDropDescription() method.
+- Added the IOLEDataObject::SetDropDescription() method.
+- FIX: Keyboard input wasn't processed if the controls were placed within a VB6 UserControl.
+- FIX: Changes were not applied implicitly when jumping between multiple instances of the control with the property pages opened.
+- Fixed the samples.
+- Improved the documentation.
+
+
+
+Version 1.2.0 - 27/02/2007
+
+- Added the ICheckBox::GetIdealSize() method.
+- Added the IOptionButton::GetIdealSize() method.
+- FIX: The Frame control flickered if used with version 6.0 of comctl32.dll.
+- FIX: Changing the ICommandButton::ButtonType property to btCommandLink at runtime didn't always work.
+- Decreased the binaries' size.
+- Improved the documentation.
+- Ported the WTL samples to WTL 8.0.
+- Made the samples DPI aware.
+- Linked the new bug tracking system.
+
+
+
+Version 1.1.0 - 05/10/2006
+
+- Added the ICommandButton::ButtonType property.
+- Added the ICommandButton::CommandLinkNote property.
+- Added the ICommandButton::DropDownArrowHeight property.
+- Added the ICommandButton::DropDownArrowWidth property.
+- Added the ICommandButton::DropDownGlyph property.
+- Added the ICommandButton::DropDownOnRight property.
+- Added the ICommandButton::DropDownPushed property.
+- Added the ICommandButton::DropDownStyle property.
+- Added the ICommandButton::hDropDownImageList property.
+- Added the ICommandButton::KeepDropDownArrowAspectRatio property.
+- Added the ICommandButton::ShowRightsElevationIcon property.
+- Added the ICommandButton::ShowSplitLine property.
+- Added the _ICommandButtonEvents::CustomDropDownAreaSize event.
+- Added the _ICommandButtonEvents::DropDown event.
+- Extended the ControlStateConstants enumeration by csDropDownPushed.
+- Extended the CustomDrawControlStateConstants enumeration by cdisNearHot, cdisOtherSideHot and cdisDropHilited (just for completeness).
+- Extended the DisabledEventsConstants enumeration by deCustomDropDownAreaSize.
+- Changed the way how the controls are drawn. This was necessary to make Windows Vista's graphic effects work.
+- FIX: Moving a control without resizing it could lead to a control width or height of 0.
+- FIX: Some controls didn't react as expected to keyboard input when they were placed inside a frame control.
+- FIX: Setting a control's imagelist to 0 didn't remove the image.
+- FIX: Right-clicking a CheckBox, CommandButton or OptionButton moved the keyboard focus to the control.
+- FIX: The frame control's Font property was ignored under some circumstances.
+- FIX: The "Font" and "MouseIcon" properties didn't work as expected.
+- Improved the documentation. Now properties are displayed as such.
+- Improved setup.
+- Minor bugfixes.
+
+
+
+Version 1.0.0 - 13/01/2006
+
+- First public release.

@@ -1,0 +1,43 @@
+HKCR
+{
+	BtnCtlsA.OptionButton.1 = s 'TimoSoft OptionButton Control 1.10 (ANSI)'
+	{
+		CLSID = s '{220FD779-6132-4977-816A-8006A59E8DEA}'
+		'Insertable'
+	}
+	BtnCtlsA.OptionButton = s 'TimoSoft OptionButton Control 1.10 (ANSI)'
+	{
+		CLSID = s '{220FD779-6132-4977-816A-8006A59E8DEA}'
+		CurVer = s 'BtnCtlsA.OptionButton.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {220FD779-6132-4977-816A-8006A59E8DEA} = s 'TimoSoft OptionButton Control 1.10 (ANSI)'
+		{
+			ProgID = s 'BtnCtlsA.OptionButton.1'
+			VersionIndependentProgID = s 'BtnCtlsA.OptionButton'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Implemented Categories'
+			{
+				'{40FC6ED4-2438-11CF-A3DB-080036F12502}'
+				'{0DE86A57-2BAA-11CF-A229-00AA003D7352}'
+				'{0DE86A53-2BAA-11CF-A229-00AA003D7352}'
+				'{157083E1-2368-11cf-87B9-00AA006C8166}'
+			}
+			val AppID = s '%APPID%'
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 4'
+			'MiscStatus' = s '0'
+			{
+				'1' = s '%OLEMISC%'
+			}
+			'TypeLib' = s '{A38BC98C-3D41-44db-B27B-CF19BAD8AE53}'
+			'Version' = s '1.10'
+		}
+	}
+}

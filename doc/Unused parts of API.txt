@@ -1,0 +1,16 @@
+The following parts of the Button API (Windows 10) are not used:
+
+Messages:
+---------
+- BM_SETDONTCLICK (https://msdn.microsoft.com/en-us/library/aa970931.aspx)
+	-> requires comctl32.dll 6.10 or newer, but may exist on older versions, too (because the name doesn't start with BCM_*)
+	-> it's for radio buttons only
+	-> the OptionButton control already works like BST_DONTCLICK being set
+- BM_SETSTYLE (https://msdn.microsoft.com/en-us/library/ms673571.aspx)
+	-> there doesn't seem to be any real difference to the SetWindowLong() approach currently used
+
+Notifications:
+--------------
+- BCN_HOTITEMCHANGE (https://msdn.microsoft.com/en-us/library/ms673556.aspx)
+	-> requires comctl32.dll 6.0 or newer
+	-> doesn't have any benefit over the TrackMouseEvent() approach (can't even replace it entirely)

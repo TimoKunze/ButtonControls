@@ -1,0 +1,342 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#ifdef _UNICODE
+  IDB_CHECKBOX            BITMAP                  "CheckBoxU.bmp"
+  IDB_COMMANDBUTTON       BITMAP                  "CommandButtonU.bmp"
+  IDB_FRAME               BITMAP                  "FrameU.bmp"
+  IDB_OPTIONBUTTON        BITMAP                  "OptionButtonU.bmp"
+#else
+  IDB_CHECKBOX            BITMAP                  "CheckBoxA.bmp"
+  IDB_COMMANDBUTTON       BITMAP                  "CommandButtonA.bmp"
+  IDB_FRAME               BITMAP                  "FrameA.bmp"
+  IDB_OPTIONBUTTON        BITMAP                  "OptionButtonA.bmp"
+#endif
+IDB_TOOLBARENABLED      BITMAP                  "ToolBar enabled.bmp"
+IDB_TOOLBARDISABLED     BITMAP                  "ToolBar disabled.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDB_ABOUT               JPG                     "About.jpg"
+IDB_PAYPAL              JPG                     "Paypal.jpg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VERSION_MAJOR,VERSION_MINOR,VERSION_REVISION1,VERSION_BUILD
+ PRODUCTVERSION VERSION_MAJOR,VERSION_MINOR,VERSION_REVISION1,VERSION_BUILD
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Designed for Visual Basic. This software is freeware!"
+#ifdef _UNICODE
+            VALUE "FileDescription", "Button ActiveX Controls (Unicode)"
+#else
+            VALUE "FileDescription", "Button ActiveX Controls (ANSI)"
+#endif
+            VALUE "FileVersion", STRFILEVERSION
+#ifdef _UNICODE
+            VALUE "InternalName", "BtnCtlsU.ocx"
+#else
+            VALUE "InternalName", "BtnCtlsA.ocx"
+#endif
+            VALUE "LegalCopyright", "Copyright (C) 2006-2018 Timo ""TimoSoft"" Kunze"
+#ifdef _UNICODE
+            VALUE "OriginalFilename", "BtnCtlsU.ocx"
+#else
+            VALUE "OriginalFilename", "BtnCtlsA.ocx"
+#endif
+            VALUE "ProductName", "TimoSoft ButtonControls"
+            VALUE "ProductVersion", STRPRODUCTVERSION
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+#ifdef _UNICODE
+  IDR_BTNCTLS               REGISTRY                "BtnCtlsU.rgs"
+  IDR_CHECKBOX              REGISTRY                "CheckBoxU.rgs"
+  IDR_COMMANDBUTTON         REGISTRY                "CommandButtonU.rgs"
+  IDR_FRAME                 REGISTRY                "FrameU.rgs"
+  IDR_OPTIONBUTTON          REGISTRY                "OptionButtonU.rgs"
+  IDR_OLEDATAOBJECT         REGISTRY                "OLEDataObjectU.rgs"
+  IDR_COMMONPROPERTIES      REGISTRY                "CommonPropertiesU.rgs"
+  IDR_STRINGPROPERTIES      REGISTRY                "StringPropertiesU.rgs"
+#else
+  IDR_BTNCTLS               REGISTRY                "BtnCtlsA.rgs"
+  IDR_CHECKBOX              REGISTRY                "CheckBoxA.rgs"
+  IDR_COMMANDBUTTON         REGISTRY                "CommandButtonA.rgs"
+  IDR_FRAME                 REGISTRY                "FrameA.rgs"
+  IDR_OPTIONBUTTON          REGISTRY                "OptionButtonA.rgs"
+  IDR_OLEDATAOBJECT         REGISTRY                "OLEDataObjectA.rgs"
+  IDR_COMMONPROPERTIES      REGISTRY                "CommonPropertiesA.rgs"
+  IDR_STRINGPROPERTIES      REGISTRY                "StringPropertiesA.rgs"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 338, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "About ButtonControls..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,281,206,50,14
+    CONTROL         5,IDC_ABOUT,"Static",SS_BITMAP | SS_REALSIZEIMAGE,10,10,132,169,WS_EX_TRANSPARENT
+    LTEXT           "ButtonControls",IDC_NAME,124,10,207,11,0,WS_EX_TRANSPARENT
+    LTEXT           "<Version>",IDC_VERSION,124,21,207,26,0,WS_EX_TRANSPARENT
+    CONTROL         "Written by:",IDC_AUTHOR,"Static",WS_GROUP | 0x20,124,51,207,11
+    LTEXT           "<Authors>",IDC_AUTHORS,124,62,207,13,0,WS_EX_TRANSPARENT
+    LTEXT           "Thanks go to:",IDC_THANKS,124,82,207,11,0,WS_EX_TRANSPARENT
+    LTEXT           "<Thanks>",IDC_THANKSTO,124,93,207,33,0,WS_EX_TRANSPARENT
+    LTEXT           "Special Thanks go to:",IDC_SPECIALTHANKS,124,133,207,11,0,WS_EX_TRANSPARENT
+    CONTROL         "<SpecialThanks>",IDC_SPECIALTHANKSTO,"Static",WS_GROUP | 0x20,124,144,207,23
+    LTEXT           "Further information:",IDC_MORE,124,181,207,11,0,WS_EX_TRANSPARENT
+    LTEXT           "<Homepage>",IDC_HOMEPAGE,124,192,95,8,SS_NOTIFY,WS_EX_TRANSPARENT
+    LTEXT           "<Bugtracker>",IDC_BUGTRACKER,220,192,50,8,SS_NOTIFY,WS_EX_TRANSPARENT
+    CONTROL         6,IDC_PAYPAL,"Static",SS_BITMAP | SS_NOTIFY | SS_REALSIZEIMAGE,225,204,48,18,WS_EX_TRANSPARENT
+END
+
+IDD_COMMONPROPERTIES DIALOGEX 0, 0, 271, 136
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "&Disabled events:",IDC_STATIC,"Static",WS_GROUP | 0x20,7,7,53,8
+    CONTROL         "",IDC_DISABLEDEVENTSBOX,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,17,130,81
+    CONTROL         "&Use improved image list support:",IDC_USEIMPROVEDIMGLSTSUPPORTCHECK,
+                    "Button",BS_AUTO3STATE | WS_TABSTOP,7,106,122,11
+    CONTROL         "&Icon Indexes:",IDC_STATIC,"Static",WS_GROUP | 0x20,12,120,50,8,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_ICONINDEXESCOMBO,63,118,100,68,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ICONINDEXEDIT,166,119,31,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    PUSHBUTTON      "&Set",IDC_SETICONINDEXBUTTON,200,118,28,14,WS_DISABLED
+END
+
+IDD_STRINGPROPERTIES DIALOGEX 0, 0, 271, 136
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "&Property:",IDC_STATIC,"Static",WS_GROUP | 0x20,7,7,34,8
+    COMBOBOX        IDC_PROPERTYCOMBO,42,5,77,52,CBS_DROPDOWNLIST | /*CBS_SORT | */WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PROPERTYEDIT,7,22,257,106,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+#ifdef UNICODE
+    "1 TYPELIB ""BtnCtlsU.tlb""\r\n"
+#else
+    "1 TYPELIB ""BtnCtlsA.tlb""\r\n"
+#endif
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LOADSETTINGS        "Load settings from a file..."
+    IDS_SAVESETTINGS        "Save the settings to a file..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLECOMMONPROPERTIES "Common"
+    IDS_DOCSTRINGCOMMONPROPERTIES "Common Properties"
+    IDS_TITLESTRINGPROPERTIES "String"
+    IDS_DOCSTRINGSTRINGPROPERTIES "String Properties"
+    IDS_PROJNAME            "BtnCtls"
+END
+
+STRINGTABLE 
+BEGIN
+    IDPC_COLORS             "Colors"
+    IDPC_DRAGDROP           "Drag'n'Drop"
+    IDPC_SPLITBUTTON        "Split Button"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_APPEARANCE2D        "%i - 2D"
+    IDP_APPEARANCE3D        "%i - 3D"
+    IDP_APPEARANCE3DLIGHT   "%i - 3D Light"
+    IDP_BORDERSTYLENONE     "%i - None"
+    IDP_BORDERSTYLEFIXEDSINGLE "%i - Fixed Single"
+    IDP_BUTTONTYPECOMMANDBUTTON "%i - Command Button"
+    IDP_BUTTONTYPECOMMANDLINK "%i - Command Link"
+    IDP_BUTTONTYPESPLITBUTTON "%i - Split Button"
+    IDP_CONTENTTYPETEXT     "%i - Text"
+    IDP_CONTENTTYPEBITMAP   "%i - Bitmap"
+    IDP_CONTENTTYPEICON     "%i - Icon"
+    IDP_DROPDOWNSTYLEIMAGE  "%i - Image"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_DROPDOWNSTYLEGLYPH  "%i - Glyph"
+    IDP_HALIGNMENTLEFT      "%i - Left"
+    IDP_HALIGNMENTCENTER    "%i - Center"
+    IDP_HALIGNMENTRIGHT     "%i - Right"
+    IDP_ICONALIGNMENTLEFT   "%i - Left"
+    IDP_ICONALIGNMENTRIGHT  "%i - Right"
+    IDP_ICONALIGNMENTTOP    "%i - Top"
+    IDP_ICONALIGNMENTBOTTOM "%i - Bottom"
+    IDP_ICONALIGNMENTCENTER "%i - Center"
+    IDP_MOUSEPOINTERDEFAULT "%i - Default"
+    IDP_MOUSEPOINTERARROW   "%i - Arrow"
+    IDP_MOUSEPOINTERCROSS   "%i - Cross"
+    IDP_MOUSEPOINTERIBEAM   "%i - I-Cursor"
+    IDP_MOUSEPOINTERICON    "%i - Symbol"
+    IDP_MOUSEPOINTERSIZE    "%i - Size"
+    IDP_MOUSEPOINTERSIZENESW "%i - Size NE SW"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_MOUSEPOINTERSIZENS  "%i - Size N S"
+    IDP_MOUSEPOINTERSIZENWSE "%i - Size NW SE"
+    IDP_MOUSEPOINTERSIZEEW  "%i - Size E W"
+    IDP_MOUSEPOINTERUPARROW "%i - Up-Arrow"
+    IDP_MOUSEPOINTERHOURGLASS "%i - Hourglass"
+    IDP_MOUSEPOINTERNODROP  "%i - Can't Drop"
+    IDP_MOUSEPOINTERARROWHOURGLASS "%i - Arrow + Hourglass"
+    IDP_MOUSEPOINTERARROWQUESTION "%i - Arrow + Questionmark"
+    IDP_MOUSEPOINTERSIZEALL "%i - Size All"
+    IDP_MOUSEPOINTERHAND    "%i - Hand"
+    IDP_MOUSEPOINTERINSERTMEDIA "%i - Insert Media"
+    IDP_MOUSEPOINTERSCROLLALL "%i - Scroll All"
+    IDP_MOUSEPOINTERSCROLLN "%i - Scroll N"
+    IDP_MOUSEPOINTERSCROLLNE "%i - Scroll NE"
+    IDP_MOUSEPOINTERSCROLLE "%i - Scroll E"
+    IDP_MOUSEPOINTERSCROLLSE "%i - Scroll SE"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_MOUSEPOINTERSCROLLS "%i - Scroll S"
+    IDP_MOUSEPOINTERSCROLLSW "%i - Scroll SW"
+    IDP_MOUSEPOINTERSCROLLW "%i - Scroll W"
+    IDP_MOUSEPOINTERSCROLLNW "%i - Scroll NW"
+    IDP_MOUSEPOINTERSCROLLNS "%i - Scroll N S"
+    IDP_MOUSEPOINTERSCROLLEW "%i - Scroll E W"
+    IDP_MOUSEPOINTERCUSTOM  "%i - Custom"
+    IDP_RIGHTTOLEFTNONE     "%i - None"
+    IDP_RIGHTTOLEFTTEXT     "%i - Text"
+    IDP_RIGHTTOLEFTLAYOUT   "%i - Layout"
+    IDP_RIGHTTOLEFTTEXTLAYOUT "%i - Text + Layout"
+    IDP_SELECTIONSTATEUNCHECKED "%i - Unchecked"
+    IDP_SELECTIONSTATECHECKED "%i - Checked"
+    IDP_SELECTIONSTATEINDETERMINATE "%i - Indeterminate"
+    IDP_STYLENORMAL         "%i - Normal"
+    IDP_STYLEFLAT           "%i - Flat"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_STYLEOWNERDRAWN     "%i - Ownerdrawn"
+    IDP_VALIGNMENTTOP       "%i - Top"
+    IDP_VALIGNMENTCENTER    "%i - Center"
+    IDP_VALIGNMENTBOTTOM    "%i - Bottom"
+END
+
+STRINGTABLE 
+BEGIN
+    IDES_FORMATMISMATCH     "Specified format doesn't match format of data"
+    IDES_INVALIDOBJUSE      "Invalid object use"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#ifdef _UNICODE
+  1 TYPELIB "BtnCtlsU.tlb"
+#else
+  1 TYPELIB "BtnCtlsA.tlb"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

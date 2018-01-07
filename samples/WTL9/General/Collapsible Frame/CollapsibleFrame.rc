@@ -1,0 +1,159 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MINUS               BITMAP                  "res\\Minus.bmp"
+IDB_PLUS                BITMAP                  "res\\Plus.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CollapsibleFrame.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 242, 236
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ButtonControls 1.10 - Collapsible Frame Sample"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_FRMU,"{21F7097C-BBA6-47C7-8455-04ECADB9F600}",0x0,0,0,184,121
+    EDITTEXT        IDC_TEXT,0,124,184,109,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "&About...",ID_APP_ABOUT,187,0,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Collapsible Frame sample for TimoSoft ButtonControls 1.10"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "CollapsibleFrame"
+            VALUE "OriginalFilename", "CollapsibleFrame.exe"
+            VALUE "ProductName", "TimoSoft ButtonControls 1.10"
+            VALUE "ProductVersion", "1.10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAINDLG DLGINIT
+BEGIN
+    IDC_FRMU, 0x376, 245, 0
+0x0000, 0x0000, 0x0909, 0x0909, 0x0101, 0x0000, 0x0303, 0x0303, 0x0900, 
+0x0000, 0x1a90, 0x0000, 0x0d55, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x000f, 0x8000, 0x0003, 0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 0x000b, 0xffff, 0x0009, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x0001, 
+0x0000, 0x0190, 0x4244, 0x0001, 0x5406, 0x6861, 0x6d6f, 0x0361, 0x1200, 
+0x0000, 0x0380, 0x0000, 0x0000, 0x0300, 0xff00, 0xffff, 0x03ff, 0x0000, 
+0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 
+0x0000, 0x0300, 0x0000, 0x0000, 0x0900, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0b00, 0xff00, 
+0x03ff, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0b00, 0xff00, 0x08ff, 
+0x2600, 0x0000, 0x2600, 0x4300, 0x6f00, 0x6c00, 0x6c00, 0x6100, 0x7000, 
+0x7300, 0x6900, 0x6200, 0x6c00, 0x6500, 0x2000, 0x4600, 0x7200, 0x6100, 
+0x6d00, 0x6500, 0x0000, 0x0b00, 0xff00, "\377" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "CollapsibleFrame"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

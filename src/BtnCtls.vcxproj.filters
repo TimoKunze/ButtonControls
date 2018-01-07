@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Generated Files">
+      <UniqueIdentifier>{4fcb65d9-08df-47d2-bb46-2183ea557bf0}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Generated Files">
+      <UniqueIdentifier>{0605f0ea-82d9-475d-8f65-cd7e9cb7a4b2}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Documents">
+      <UniqueIdentifier>{3a541b89-d6c5-4f70-949f-b976a52c7617}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnCtls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumOLEVERB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetImageList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetOLEDataObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnCtlsA_i.c">
+      <Filter>Source Files\Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnCtlsU_i.c">
+      <Filter>Source Files\Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BtnCtlsA.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="BtnCtlsU.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\About.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BtnCtlsA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BtnCtlsU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CheckBoxA.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CheckBoxU.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CommandButtonA.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CommandButtonU.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FrameA.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FrameU.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OptionButtonA.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OptionButtonU.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Paypal.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ToolBar disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ToolBar enabled.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\doc\Unused parts of API.txt">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="res\CheckBoxA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\StringPropertiesU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CheckBoxU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CommandButtonA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CommandButtonU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CommonPropertiesA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CommonPropertiesU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FrameA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FrameU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OLEDataObjectA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OLEDataObjectU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OptionButtonA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\OptionButtonU.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\StringPropertiesA.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="BtnCtlsA.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+    <Midl Include="BtnCtlsU.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_ICheckBoxEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_ICommandButtonEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_IFrameEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_IOLEDataObjectEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_IOptionButtonEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CompilerFlags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DispIDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumOLEVERB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperLinkEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICategorizeProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICreditsProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IImageListPrivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetImageList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyNotifySinkImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetOLEDataObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnCtlsA.h">
+      <Filter>Header Files\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnCtlsU.h">
+      <Filter>Header Files\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\BtnCtls.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

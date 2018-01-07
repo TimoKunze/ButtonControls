@@ -1,0 +1,43 @@
+HKCR
+{
+	BtnCtlsA.CommandButton.1 = s 'TimoSoft CommandButton Control 1.10 (ANSI)'
+	{
+		CLSID = s '{B6F4DD67-B461-444b-BB8E-9279034912A3}'
+		'Insertable'
+	}
+	BtnCtlsA.CommandButton = s 'TimoSoft CommandButton Control 1.10 (ANSI)'
+	{
+		CLSID = s '{B6F4DD67-B461-444b-BB8E-9279034912A3}'
+		CurVer = s 'BtnCtlsA.CommandButton.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B6F4DD67-B461-444b-BB8E-9279034912A3} = s 'TimoSoft CommandButton Control 1.10 (ANSI)'
+		{
+			ProgID = s 'BtnCtlsA.CommandButton.1'
+			VersionIndependentProgID = s 'BtnCtlsA.CommandButton'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Implemented Categories'
+			{
+				'{40FC6ED4-2438-11CF-A3DB-080036F12502}'
+				'{0DE86A57-2BAA-11CF-A229-00AA003D7352}'
+				'{0DE86A53-2BAA-11CF-A229-00AA003D7352}'
+				'{157083E1-2368-11cf-87B9-00AA006C8166}'
+			}
+			val AppID = s '%APPID%'
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 2'
+			'MiscStatus' = s '0'
+			{
+				'1' = s '%OLEMISC%'
+			}
+			'TypeLib' = s '{A38BC98C-3D41-44db-B27B-CF19BAD8AE53}'
+			'Version' = s '1.10'
+		}
+	}
+}
