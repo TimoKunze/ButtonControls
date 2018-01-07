@@ -69,9 +69,11 @@ In most cases we follow the style suggested by the [ECMA-334](http://www.ecma-in
        - exceptions: namespaces, classes, interfaces, methods and structs (where the opening bracket is located on a new line)
   - logical brackets ```()``` don't get surrounded by white spaces
   - always use ```{}```, also if they're not neccessary:
-       ```if(myBool) {
+       ```
+       if(myBool) {
          return S_OK;
-       }```
+       }
+       ```
 
 (8) Pointers
   - ```int* pMyInt```, NOT ```int *pMyInt```
@@ -93,7 +95,8 @@ In most cases we follow the style suggested by the [ECMA-334](http://www.ecma-in
 
 #### Templates
 
-```class MyClass :
+```
+class MyClass :
     public MyBaseClass
 {
 public:
@@ -132,4 +135,5 @@ switch(myLong) {
   default:
     myLong = 10;
     break;
-}     // switch(myLong)```
+}     // switch(myLong)
+```
