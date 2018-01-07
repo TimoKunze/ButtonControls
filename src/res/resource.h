@@ -8,12 +8,12 @@
 
 #define VERSION_MAJOR																1
 #define VERSION_MINOR																10
-#define VERSION_REVISION1														2
+#define VERSION_REVISION1														3
 #define VERSION_REVISION2														0
-#define VERSION_BUILD																201
-#define STRFILEVERSION															"1.10.2.201"
+#define VERSION_BUILD																202
+#define STRFILEVERSION															"1.10.3.202"
 #define STRPRODUCTVERSION														"1.10"
-#define STRTIMESTAMP																"2018/01/07 19:20:17"
+#define STRTIMESTAMP																"2018/01/07 19:43:18"
 
 #define IDB_CHECKBOX																1
 #define IDB_COMMANDBUTTON														2
