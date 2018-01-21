@@ -2492,7 +2492,7 @@ STDMETHODIMP CommandButton::get_DropDownGlyph(SHORT* pValue)
 		splitSettings.mask = BCSIF_GLYPH | BCSIF_IMAGE | BCSIF_STYLE;
 		if(SendMessage(BCM_GETSPLITINFO, 0, reinterpret_cast<LPARAM>(&splitSettings))) {
 			if((splitSettings.uSplitStyle & BCSS_IMAGE) == 0) {
-				properties.dropDownGlyph = reinterpret_cast<WCHAR>(splitSettings.himlGlyph);
+				properties.dropDownGlyph = static_cast<WCHAR>(LOWORD(HandleToLong(splitSettings.himlGlyph)));
 			}
 		}
 	}
