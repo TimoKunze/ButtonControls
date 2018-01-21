@@ -37,7 +37,7 @@ STDMETHODIMP CommonProperties::Activate(HWND hWndParent, LPCRECT pRect, BOOL mod
 	controls.setIconIndexButton.Attach(GetDlgItem(IDC_SETICONINDEXBUTTON));
 
 	// setup the toolbar
-	WTL::CRect toolbarRect;
+	CRect toolbarRect;
 	GetClientRect(&toolbarRect);
 	toolbarRect.OffsetRect(0, 2);
 	toolbarRect.left += toolbarRect.right - 46;

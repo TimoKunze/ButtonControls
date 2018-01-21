@@ -3651,7 +3651,7 @@ LRESULT Frame::OnSetCursor(UINT /*message*/, WPARAM /*wParam*/, LPARAM /*lParam*
 	BOOL setCursor = FALSE;
 
 	// Are we really over the control?
-	WTL::CRect clientArea;
+	CRect clientArea;
 	GetClientRect(&clientArea);
 	ClientToScreen(&clientArea);
 	DWORD position = GetMessagePos();
@@ -3881,7 +3881,7 @@ LRESULT Frame::OnWindowPosChanged(UINT /*message*/, WPARAM /*wParam*/, LPARAM lP
 {
 	LPWINDOWPOS pDetails = reinterpret_cast<LPWINDOWPOS>(lParam);
 
-	WTL::CRect windowRectangle = m_rcPos;
+	CRect windowRectangle = m_rcPos;
 	/* Ugly hack: We depend on this message being sent without SWP_NOMOVE at least once, but this requirement
 	              not always will be fulfilled. Fortunately pDetails seems to contain correct x and y values
 	              even if SWP_NOMOVE is set.
@@ -4138,7 +4138,7 @@ void Frame::CalculateCaptionRectangles(SIZE iconSize, SIZE textOrImageSize, LPRE
 	}
 
 	int captionHorizontalMargin = 8 + GetSystemMetrics(SM_CXBORDER);
-	WTL::CRect clientRectangle;
+	CRect clientRectangle;
 	GetClientRect(&clientRectangle);
 
 	POINT iconPosition = {0};
@@ -4311,7 +4311,7 @@ void Frame::CalculateCaptionRectangles(SIZE iconSize, SIZE textOrImageSize, LPRE
 
 void Frame::DrawFrame(HDC hTargetDC)
 {
-	WTL::CRect clientRectangle;
+	CRect clientRectangle;
 	GetClientRect(&clientRectangle);
 	CDCHandle dcToDrawIn(hTargetDC);
 
