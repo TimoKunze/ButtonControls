@@ -158,7 +158,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 		LPWINDOWPOS pDetails = reinterpret_cast<LPWINDOWPOS>(lParam);
 
 		if((pDetails->flags & SWP_NOSIZE) == 0) {
-			WTL::CRect rc;
+			CRect rc;
 			GetClientRect(&rc);
 
 			frmUContainerWnd.SetWindowPos(NULL, 0, 0, 197, (rc.Height() - 5) / 2, SWP_NOMOVE);
@@ -168,7 +168,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 			if(RunTimeHelper::IsCommCtrl6()) {
 				controls.chkU->GetIdealSize(&cx, &cy);
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				chkUWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();
@@ -180,7 +180,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 				controls.cmdU->GetIdealSize(&cx, &cy);
 				cx += 5;
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				cmdUWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();
@@ -193,7 +193,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 			if(RunTimeHelper::IsCommCtrl6()) {
 				controls.opt1U->GetIdealSize(&cx, &cy);
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				opt1UWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();
@@ -204,7 +204,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 			if(RunTimeHelper::IsCommCtrl6()) {
 				controls.opt2U->GetIdealSize(&cx, &cy);
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				opt2UWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();
@@ -217,7 +217,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 			if(RunTimeHelper::IsCommCtrl6()) {
 				controls.chkA->GetIdealSize(&cx, &cy);
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				chkAWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();
@@ -229,7 +229,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 				controls.cmdA->GetIdealSize(&cx, &cy);
 				cx += 5;
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				cmdAWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();
@@ -240,7 +240,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 			if(RunTimeHelper::IsCommCtrl6()) {
 				controls.opt1A->GetIdealSize(&cx, &cy);
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				opt1AWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();
@@ -251,7 +251,7 @@ LRESULT CMainDlg::OnWindowPosChanged(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM lP
 			if(RunTimeHelper::IsCommCtrl6()) {
 				controls.opt2A->GetIdealSize(&cx, &cy);
 			} else {
-				WTL::CRect rect;
+				CRect rect;
 				opt2AWnd.GetWindowRect(&rect);
 				cx = rect.Width();
 				cy = rect.Height();

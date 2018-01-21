@@ -81,13 +81,13 @@ void CMainDlg::CloseDialog(int nVal)
 
 void CMainDlg::CollapseFrame(void)
 {
-	WTL::CRect frameRectangle;
+	CRect frameRectangle;
 	frmUWnd.GetWindowRect(&frameRectangle);
 	ScreenToClient(&frameRectangle);
 	frameRectangle.bottom = frameRectangle.top + 20;
 	frmUWnd.SetWindowPos(NULL, &frameRectangle, SWP_NOREPOSITION);
 
-	WTL::CRect textRectangle;
+	CRect textRectangle;
 	controls.text.GetWindowRect(&textRectangle);
 	ScreenToClient(&textRectangle);
 	textRectangle.top = frameRectangle.bottom + 5;
@@ -98,13 +98,13 @@ void CMainDlg::CollapseFrame(void)
 
 void CMainDlg::ExpandFrame(void)
 {
-	WTL::CRect frameRectangle;
+	CRect frameRectangle;
 	frmUWnd.GetWindowRect(&frameRectangle);
 	ScreenToClient(&frameRectangle);
 	frameRectangle.bottom = frameRectangle.top + 129;
 	frmUWnd.SetWindowPos(NULL, &frameRectangle, SWP_NOREPOSITION);
 
-	WTL::CRect textRectangle;
+	CRect textRectangle;
 	controls.text.GetWindowRect(&textRectangle);
 	ScreenToClient(&textRectangle);
 	textRectangle.top = frameRectangle.bottom + 5;

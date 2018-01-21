@@ -105,7 +105,7 @@ void CMainDlg::OwnerDrawCmd(OwnerDrawActionConstants requiredAction, OwnerDrawCo
 	CDCHandle dc = static_cast<HDC>(LongToHandle(hDC));
 	if(requiredAction & odaDrawEntire) {
 		// draw background
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		CBrush brush;
 		COLORREF clr;
 		OleTranslateColor(controls.cmd->BackColor, NULL, &clr);
@@ -162,7 +162,7 @@ void CMainDlg::OwnerDrawCmd(OwnerDrawActionConstants requiredAction, OwnerDrawCo
 	}
 
 	if(requiredAction & odaFocusChanged) {
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		// ensure border is drawn
 		if(controlState & odcsFocus) {
 			if(((controlState & odcsPushed) == odcsPushed) || ((controlState & odcsSelected) == odcsSelected)) {
@@ -200,7 +200,7 @@ void CMainDlg::OwnerDrawChk(OwnerDrawActionConstants requiredAction, OwnerDrawCo
 	CDCHandle dc = static_cast<HDC>(LongToHandle(hDC));
 	if(requiredAction & odaDrawEntire) {
 		// draw background
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		CBrush brush;
 		if(((controlState & odcsSelected) == odcsSelected) && ((controlState & odcsHot) == 0) && ((controlState & odcsDisabled) == 0)) {
 			CDC memDC;
@@ -274,7 +274,7 @@ void CMainDlg::OwnerDrawChk(OwnerDrawActionConstants requiredAction, OwnerDrawCo
 	}
 
 	if(requiredAction & odaFocusChanged) {
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		// ensure border is drawn
 		if(controlState & odcsFocus) {
 			if(((controlState & odcsPushed) == odcsPushed) || ((controlState & odcsSelected) == odcsSelected) || ((controlState & odcsIndeterminate) == odcsIndeterminate)) {
@@ -297,7 +297,7 @@ void CMainDlg::OwnerDrawOpt1(OwnerDrawActionConstants requiredAction, OwnerDrawC
 	CDCHandle dc = static_cast<HDC>(LongToHandle(hDC));
 	if(requiredAction & odaDrawEntire) {
 		// draw background
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		CBrush brush;
 		if(((controlState & odcsSelected) == odcsSelected) && ((controlState & odcsHot) == 0) && ((controlState & odcsDisabled) == 0)) {
 			CDC memDC;
@@ -371,7 +371,7 @@ void CMainDlg::OwnerDrawOpt1(OwnerDrawActionConstants requiredAction, OwnerDrawC
 	}
 
 	if(requiredAction & odaFocusChanged) {
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		// ensure border is drawn
 		if(controlState & odcsFocus) {
 			if(((controlState & odcsPushed) == odcsPushed) || ((controlState & odcsSelected) == odcsSelected)) {
@@ -405,7 +405,7 @@ void CMainDlg::OwnerDrawOpt2(OwnerDrawActionConstants requiredAction, OwnerDrawC
 	CDCHandle dc = static_cast<HDC>(LongToHandle(hDC));
 	if(requiredAction & odaDrawEntire) {
 		// draw background
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		CBrush brush;
 		if(((controlState & odcsSelected) == odcsSelected) && ((controlState & odcsHot) == 0) && ((controlState & odcsDisabled) == 0)) {
 			CDC memDC;
@@ -479,7 +479,7 @@ void CMainDlg::OwnerDrawOpt2(OwnerDrawActionConstants requiredAction, OwnerDrawC
 	}
 
 	if(requiredAction & odaFocusChanged) {
-		WTL::CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
+		CRect rc(drawingRectangle->Left, drawingRectangle->Top, drawingRectangle->Right, drawingRectangle->Bottom);
 		// ensure border is drawn
 		if(controlState & odcsFocus) {
 			if(((controlState & odcsPushed) == odcsPushed) || ((controlState & odcsSelected) == odcsSelected)) {
